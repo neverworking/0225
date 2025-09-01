@@ -2,7 +2,7 @@ import { Music } from 'lucide-react'
 
 export default function MusicPlayer() {
   // Change this to your favorite track/playlist
-  const spotifyEmbed = "https://open.spotify.com/embed/track/4iJyoBOLtHqaGxP12qzhQI?utm_source=generator"
+  const spotifyEmbed = "https://open.spotify.com/track/69YTuACgrMGedLai9jPI9N"
   return (
     <div className="glass rounded-2xl p-4 border border-white/10">
       <div className="flex items-center gap-2 mb-3">
