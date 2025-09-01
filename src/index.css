@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glass-bg: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.18);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 20px rgba(0,0,0,0.25), 0 0 40px rgba(56,182,255,0.15);
+}
+
+/* Floating particles */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(56,182,255,0.7);
+  opacity: 0.6;
+  filter: blur(1px);
+  animation: float 12s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0) translateX(0) scale(1); opacity: .6; }
+  50%  { transform: translateY(-40px) translateX(10px) scale(1.15); opacity: .9; }
+  100% { transform: translateY(0) translateX(0) scale(1); opacity: .6; }
+}
+
+/* 3D-ish hover */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.card-3d:hover {
+  transform: translateY(-4px) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 0 10px 30px rgba(56,182,255,.2);
+}
+
+/* Hover tint */
+.tint:hover {
+  box-shadow: 0 0 0 9999px rgba(56,182,255,0.06) inset;
+  border-color: rgba(56,182,255,0.35);
+}
