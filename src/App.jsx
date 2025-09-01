@@ -13,20 +13,20 @@ export default function App() {
   const [opened, setOpened] = useState(false)
 
   const reasons = useMemo(() => [
-    "You make ordinary days feel like little adventures.",
-    "Your laugh is my favorite sound in the world.",
+    "because you’re not just part of my story—you are the story",
+    "Your laugh is my favorite sound in the world.(Also when you snore when you sleep over our call)",
     "You care in ways that make me feel lucky every day.",
     "Even from miles away, you’re home to me.",
-    "You remember the tiny things that matter to my heart.",
-    "With you, my future feels bright and calm."
+    "because I Annoye with my worst jokes and still u love me.",
+    "turning late-night calls into my favorite lullabies."
   ], [])
 
   const wishes = useMemo(() => [
-    "A soft day with easy smiles.",
-    "A calm mind and the best sleep.",
-    "Unexpected reasons to giggle.",
-    "Gentle luck finding you everywhere.",
-    "Knowing you’re loved. By me. Always."
+    "I LOVE YOU",
+    "I LOVE YOU",
+    "I LOVE YOU",
+    "I LOVE YOU",
+    "I'll Always LOVE YOU(More Than You )."
   ], [])
 
   const photos = useMemo(() => [
@@ -107,7 +107,7 @@ export default function App() {
               </div>
             </SectionCard>
 
-            <SectionCard title="Birthday wishes (for you, from me)">
+            <SectionCard title="Only Things I wanna say today  (to you)">
               <ul className="grid sm:grid-cols-2 gap-3 list-none p-0 m-0">
                 {wishes.map((w, i) => (
                   <li key={i} className="glass rounded-xl p-4 border border-white/10 tint">{w}</li>
@@ -115,19 +115,7 @@ export default function App() {
               </ul>
             </SectionCard>
 
-            <SectionCard title="Snapshots of us">
-              <div className="grid sm:grid-cols-3 gap-4">
-                {photos.map((p, i) => (
-                  <div key={i} className="relative glass rounded-xl border border-white/10 overflow-hidden card-3d">
-                    <img src={p.src} alt={p.title} className="w-full h-48 object-cover opacity-90" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                    <div className="absolute bottom-2 left-2 text-sm text-white/90">{p.title}</div>
-                    <div className="absolute top-2 right-2 opacity-80"><img src={PolaroidUrl} className="w-6 h-6 text-brand"  alt="polaroid" /></div>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-3 text-sm text-white/60">Tip: replace the placeholders in <code className="text-white/80">src/App.jsx</code> with your photos.</p>
-            </SectionCard>
+      
 
             <SectionCard title="Press play">
               <MusicPlayer />
@@ -146,7 +134,7 @@ export default function App() {
             </SectionCard>
 
             <footer className="text-center text-white/60 py-6">
-              Made with 💙 and a lot of you • <span className="text-brand">Happy Birthday to me (with you)</span>
+              Made for you • <span className="text-brand">HARSHITA I LOVE YOU</span>
             </footer>
           </div>
         )}
